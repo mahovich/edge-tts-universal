@@ -176,7 +176,7 @@ var TRUSTED_CLIENT_TOKEN = "6A5AA1D4EAFF4E9FB37E23D68491D6F4";
 var WSS_URL = `wss://${BASE_URL}/edge/v1?TrustedClientToken=${TRUSTED_CLIENT_TOKEN}`;
 var VOICE_LIST_URL = `https://${BASE_URL}/voices/list?trustedclienttoken=${TRUSTED_CLIENT_TOKEN}`;
 var DEFAULT_VOICE = "en-US-EmmaMultilingualNeural";
-var CHROMIUM_FULL_VERSION = "142.0.3595.94";
+var CHROMIUM_FULL_VERSION = "144.0.3719.92";
 var CHROMIUM_MAJOR_VERSION = CHROMIUM_FULL_VERSION.split(".")[0];
 var SEC_MS_GEC_VERSION = `1-${CHROMIUM_FULL_VERSION}`;
 var BASE_HEADERS = {
@@ -194,7 +194,7 @@ var WSS_HEADERS = {
 var VOICE_HEADERS = {
   ...BASE_HEADERS,
   "Authority": "speech.platform.bing.com",
-  "Sec-CH-UA": `"Chromium";v="${CHROMIUM_MAJOR_VERSION}", "Microsoft Edge";v="${CHROMIUM_MAJOR_VERSION}", "Not_A Brand";v="99"`,
+  "Sec-CH-UA": `"Not(A:Brand";v="8", "Chromium";v="${CHROMIUM_MAJOR_VERSION}", "Microsoft Edge";v="${CHROMIUM_MAJOR_VERSION}"`,
   "Sec-CH-UA-Mobile": "?0",
   "Accept": "*/*",
   "Sec-Fetch-Site": "none",
